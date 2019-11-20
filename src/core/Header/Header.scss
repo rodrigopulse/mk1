@@ -1,3 +1,5 @@
+@import "../../assets/scss/variaveis";
+
 .header {
   width: 100%;
   height: auto;
@@ -9,7 +11,20 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    @media screen and ( min-width: 768px ) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.logo {
+  img {
+    max-width: 100%;
+  }
+  @media screen and ( max-width: 768px ) {
+    max-width: 80px;
   }
 }
 .botao-whats {
@@ -18,7 +33,38 @@
     border-radius: 100px;
   }
 }
-.container-agende {
+.container-agende-desktop {
   position: relative;
   display: block;
+}
+.container-agende-mobile {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  .botao-agende {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    background: $corLaranja;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .botao-whats {
+    margin-left: 0;
+    width: 80px;
+    height: 52px;
+    background: #4DC362;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

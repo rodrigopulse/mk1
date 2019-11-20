@@ -5,16 +5,28 @@ import './Hero.scss';
 
 //Imagens
 import HeroDesktop from '../../assets/imagens/heros/hero-home-desktop.jpg';
+import HeroMobile from '../../assets/imagens/heros/hero-home-mobile.jpg';
 
 class Hero extends React.Component {
-
+  constructor() {
+    super()
+    this.state = {isMobile: ''}
+  }
 	render() {
-
+    if (window.innerWidth < 768 ) {
+			this.state.isMobile = true;
+		} else {
+			this.state.isMobile = false;
+		}
 		return (
 
 			<div className='hero'>
         <div className="hero__imagem">
-          <img src={HeroDesktop} alt="Hero Crossfit" />
+          { this.state.isMobile ? (
+            <img src={ HeroMobile } alt="Hero Crossfit" />
+          ) : (
+            <img src={ HeroDesktop } alt="Hero Crossfit" />
+          )}
         </div>
         <div className="container container--max">
           <div className="hero__conteudo">

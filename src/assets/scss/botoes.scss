@@ -1,3 +1,8 @@
+@import "./variaveis";
+
+a, button {
+  cursor: pointer;
+}
 .btn-primary {
   background: $corLaranja;
   transition: all .2s linear;
