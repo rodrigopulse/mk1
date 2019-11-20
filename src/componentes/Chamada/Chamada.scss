@@ -1,0 +1,26 @@
+@import "../../assets/scss/variaveis.scss";
+.chamada {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0;
+  background: $corLaranja;
+  padding: 60px 0;
+  h3, h4 {
+    color: #fff;
+  }
+  h3 {
+    font-size: 27px;
+    @media screen and ( min-width: 768px ) {
+      font-size: 46px;
+    }
+  }
+  h4 {
+    text-transform: inherit;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    @media screen and ( min-width: 768px ) {
+      font-size: 33px;      
+    }
+  }
+}

@@ -6,7 +6,11 @@ import './Home.scss';
 
 //core
 import Header from '../../core/Header/Header';
+
+//componentes
 import Hero from '../../componentes/Hero/Hero';
+import Pilares from '../../componentes/Pilares/Pilares';
+import Chamada from '../../componentes/Chamada/Chamada';
 
 class Home extends React.Component {
 
@@ -22,6 +26,8 @@ class Home extends React.Component {
 				</Helmet>
 				<Header />
 				<Hero />
+				<Pilares />
+				<Chamada />
 			</div>
 
     );

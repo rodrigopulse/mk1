@@ -1,0 +1,35 @@
+@import '../../assets/scss/variaveis';
+
+.pilares {
+  background: #000;
+  padding: 25px;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__titulos {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-transform: inherit;
+    font-size: 17px;
+    line-height: 17px;
+    @media screen and ( min-width: 768px ) {
+      font-size: 27px;
+      line-height: 30px;
+    }
+  }
+  svg, img {
+    max-width: 100%;
+    margin: 0 auto 15px auto;
+    position: relative;
+    display: block;
+  }
+  &__item {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    @media screen and (min-width: 768px) {
+      width: 25%;
+    }
+  }
+}
