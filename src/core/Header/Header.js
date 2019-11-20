@@ -10,6 +10,7 @@ import {
 import './Header.scss';
 //Imagens
 import Logo from '../../assets/imagens/logo.png'; 
+import whats from '../../assets/imagens/whats.svg';
 
 class Home extends React.Component {
 
@@ -22,8 +23,13 @@ class Home extends React.Component {
 					<div className="logo">
 						<img src={ Logo } alt="Crossfit em Guarulhos - Logo MK1" />
 					</div>
-				</div>
-				<div className="container-agende"></div>
+					<div className="container-agende">
+						<Link className="btn btn-primary btn-sm btn-primary--sombra" to="/aula-cross-fit">AGENDE UMA AULA EXPERIMENTAL</Link>
+						<a target="_blank" className="botao-whats" href="https://api.whatsapp.com/send?phone=5511930229182">
+							<img className="btn-primary--sombra" src={ whats } alt="Whats App MK1" />
+						</a>
+					</div>
+				</div>				
 			</header>
 
     );

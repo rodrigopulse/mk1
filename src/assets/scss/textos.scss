@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  color: $corLaranja;
+}
+h1, .txt-h1 {
+  font-size: 59px;
+  line-height: 73px;
+}
+h2, .txt-h2 {
+  font-size: 27px;
+  line-height: 35px;
+}

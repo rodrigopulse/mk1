@@ -6,6 +6,17 @@
   top: 0;
   left: 0;
   z-index: 2;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.botao-whats {
+  margin-left: 15px;
+  img {
+    border-radius: 100px;
+  }
 }
 .container-agende {
   position: relative;

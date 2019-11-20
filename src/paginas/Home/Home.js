@@ -3,8 +3,10 @@ import { Helmet } from "react-helmet";
 
 //sass
 import './Home.scss';
-//Template Partes
-import Header from '../../template_partes/Header/Header';
+
+//core
+import Header from '../../core/Header/Header';
+import Hero from '../../componentes/Hero/Hero';
 
 class Home extends React.Component {
 
@@ -19,6 +21,7 @@ class Home extends React.Component {
 						<meta name="description" content="Primeiro box de Crossfit em Guarulhos. Treine com os melhores. Faça uma aula exprimental e entre para o Mundo do Crossfit." />
 				</Helmet>
 				<Header />
+				<Hero />
 			</div>
 
     );

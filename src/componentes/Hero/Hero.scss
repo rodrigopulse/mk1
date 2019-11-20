@@ -1,0 +1,28 @@
+.hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  &__imagem {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__conteudo {
+    width: 100%;
+    max-width: 550px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 0;
+    h2 {
+      color: #fff;
+      text-transform: unset;
+    }
+  }
+}
