@@ -6,6 +6,7 @@ import './Home.scss';
 
 //core
 import Header from '../../core/Header/Header';
+import Footer from '../../core/Footer/Footer';
 
 //componentes
 import Hero from '../../componentes/Hero/Hero';
@@ -22,12 +23,13 @@ class Home extends React.Component {
         <Helmet>
 						<meta charSet="utf-8" />
 						<title>Crossfit em Guarulhos - MK1</title>
-						<meta name="description" content="Primeiro box de Crossfit em Guarulhos. Treine com os melhores. Faça uma aula exprimental e entre para o Mundo do Crossfit." />
+						<meta name="description" content="Primeiro box de Crossfit em Guarulhos. Treine com os melhores profissionais certificados e habilitados a ministrar aulas de Crossfit na MK-1." />
 				</Helmet>
 				<Header />
 				<Hero />
 				<Pilares />
 				<Chamada />
+				<Footer />
 			</div>
 
     );

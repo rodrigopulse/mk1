@@ -1,0 +1,21 @@
+@import "../../assets/scss/variaveis";
+
+.container-aula-experimental {
+  background: $corPreto;
+  &__conteudo {
+    padding: 100px 0 40px 0;
+    @media screen and (min-width: 768px) {
+      padding: 170px 0 40px 0;
+    }
+    h2, h3 {
+      color: #fff;
+      text-transform: inherit;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+}

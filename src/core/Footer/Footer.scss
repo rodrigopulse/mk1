@@ -1,0 +1,15 @@
+@import "../../assets/scss/variaveis";
+
+.footer {
+  background: $corLaranja;
+  text-align: center;
+  padding: 50px 0;
+  &__telefone {
+    font-size: 33px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  &__endereco {
+    color: #fff;
+  }
+}

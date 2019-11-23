@@ -34,14 +34,14 @@ class Home extends React.Component {
 					</div>
 					{ this.state.isMobile ? (
 						<div className="container-agende-mobile">
-							<Link className="botao-agende" to="/aula-cross-fit">AGENDE UMA AULA EXPERIMENTAL</Link>
+							<Link className="botao-agende" to={`${process.env.PUBLIC_URL}/aula-de-crossfit`}>AGENDE UMA AULA EXPERIMENTAL</Link>
 							<a target="_blank" className="botao-whats" href="https://api.whatsapp.com/send?phone=5511930229182">
 								<img src={ whatsMobile } alt="Whats App MK1" />
 							</a>
 						</div>
 					) : (
 						<div className="container-agende-desktop">
-							<Link className="btn btn-primary btn-sm btn-primary--sombra" to="/aula-cross-fit">AGENDE UMA AULA EXPERIMENTAL</Link>
+							<Link className="btn btn-primary btn-sm btn-primary--sombra" to={`${process.env.PUBLIC_URL}/aula-de-crossfit`}>AGENDE UMA AULA EXPERIMENTAL</Link>
 							<a target="_blank" className="botao-whats" href="https://api.whatsapp.com/send?phone=5511930229182">
 								<img className="btn-primary--sombra" src={ whats } alt="Whats App MK1" />
 							</a>
