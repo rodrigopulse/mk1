@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -9,7 +8,7 @@ import {
 //sass
 import './Header.scss';
 //Imagens
-import Logo from '../../assets/imagens/logo.png'; 
+import Logo from '../../assets/imagens/logo.png';
 import whats from '../../assets/imagens/whats.svg';
 import whatsMobile from '../../assets/imagens/whats-mobile.svg';
 
@@ -48,7 +47,7 @@ class Home extends React.Component {
 						</div>
 					) }
 
-				</div>				
+				</div>
 			</header>
 
     );

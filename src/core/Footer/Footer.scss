@@ -3,7 +3,10 @@
 .footer {
   background: $corLaranja;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
+  @media screen and (min-width: 768px) {
+    padding: 50px 0;
+  }
   &__telefone {
     font-size: 33px;
     color: #fff;
@@ -11,5 +14,18 @@
   }
   &__endereco {
     color: #fff;
+  }
+  &__sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      position: relative;
+      display: block;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
