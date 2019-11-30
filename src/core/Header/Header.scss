@@ -8,10 +8,16 @@
   top: 0;
   left: 0;
   z-index: 2;
+  height: 85px;
+  @media screen and ( min-width: 768px ) {
+    height: 150px;
+    position: fixed;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
     @media screen and ( min-width: 768px ) {
       display: flex;
       align-items: center;
@@ -22,6 +28,12 @@
 .logo {
   img {
     max-width: 100%;
+  }
+  &--show {
+    display: block;
+  }
+  &--hide {
+    display: none;
   }
   @media screen and ( max-width: 768px ) {
     max-width: 80px;
@@ -34,7 +46,10 @@
   }
 }
 .container-agende-desktop {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
   display: block;
 }
 .container-agende-mobile {
@@ -45,6 +60,7 @@
   left: 0;
   z-index: 1;
   display: flex;
+  box-shadow: 0 5px 17px $corPreto;
   .botao-agende {
     width: 100%;
     height: auto;

@@ -13,9 +13,27 @@ import whats from '../../assets/imagens/whats.svg';
 import whatsMobile from '../../assets/imagens/whats-mobile.svg';
 
 class Home extends React.Component {
+
 	constructor() {
 		super()
-		this.state = {isMobile : ''}
+		this.state = {
+			isMobile : '',
+			logoShow: 'logo logo--show'
+    };
+	}
+	handleScroll() {
+    if (document.documentElement.scrollTop > 130) {
+			this.setState({
+				logoShow: 'logo logo--hide'
+			})
+    } else {
+			this.setState({
+				logoShow: 'logo logo--show'
+			})
+		}
+   }
+	componentDidMount() {
+		window.onscroll = () => this.handleScroll()
 	}
 	render() {
 		if (window.innerWidth < 768 ) {
@@ -28,7 +46,7 @@ class Home extends React.Component {
       <header className="header">
 				<div className="container container--max header__container">
 
-					<div className="logo">
+					<div className={this.state.logoShow}>
 						<img src={ Logo } alt="Crossfit em Guarulhos - Logo MK1" />
 					</div>
 					{ this.state.isMobile ? (
