@@ -47,7 +47,9 @@ class Home extends React.Component {
 				<div className="container container--max header__container">
 
 					<div className={this.state.logoShow}>
-						<img src={ Logo } alt="Crossfit em Guarulhos - Logo MK1" />
+						<Link to='/'>
+							<img src={ Logo } alt="Crossfit em Guarulhos - Logo MK1" />
+						</Link>
 					</div>
 					{ this.state.isMobile ? (
 						<div className="container-agende-mobile">
