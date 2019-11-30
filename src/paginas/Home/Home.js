@@ -12,6 +12,7 @@ import Footer from '../../core/Footer/Footer';
 import Hero from '../../componentes/Hero/Hero';
 import Pilares from '../../componentes/Pilares/Pilares';
 import Chamada from '../../componentes/Chamada/Chamada';
+import GaleriaFotos from '../../componentes/GaleriaFotos/GaleriaFotos'
 
 class Home extends React.Component {
 
@@ -29,6 +30,7 @@ class Home extends React.Component {
 				<Hero />
 				<Pilares />
 				<Chamada />
+				<GaleriaFotos />
 				<Footer />
 			</div>
 

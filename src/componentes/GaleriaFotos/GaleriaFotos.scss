@@ -1,0 +1,60 @@
+.galeria-fotos {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  &__thumb {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      width: 33.33%;
+    }
+  }
+  &__botao {
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: 0;
+    img {
+      width: 100%;
+      transition: all .4s linear;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      &:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+.galeria-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, .7);
+  &__imagem {
+    height: 90%;
+    width: auto;
+    display: block;
+    position: relative;
+    img {
+      min-width: 900px;
+      width: 100%;
+    }
+  }
+}
