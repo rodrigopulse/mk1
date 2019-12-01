@@ -41,7 +41,7 @@ class Home extends React.Component {
       <header className="header">
 				<div className="container container--max header__container">
 
-					<div className={this.state.logoShow}>
+					<div className="logo" style={ document.documentElement.scrollTop > 130 ? { opacity: 0} : {}}>
 						<Link to='/'>
 							<img src={ Logo } alt="Crossfit em Guarulhos - Logo MK1" />
 						</Link>

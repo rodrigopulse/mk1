@@ -26,14 +26,16 @@
   }
 }
 .logo {
+  display: block;
+  transition: opacity .3s ease-in-out;
   img {
     max-width: 100%;
   }
   &--show {
-    display: block;
+    opacity: 1;
   }
   &--hide {
-    display: none;
+    opacity: 0;
   }
   @media screen and ( max-width: 768px ) {
     max-width: 80px;
