@@ -8,6 +8,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__thumb {
     width: 100%;
@@ -50,11 +51,19 @@
   &__imagem {
     height: 90%;
     width: auto;
-    display: block;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     img {
-      min-width: 900px;
+      max-width: 100%;
       width: 100%;
+      @media screen and (min-width: 768px) {
+        max-width: 768px;
+      }
+      @media screen and (min-width: 990px) {
+        max-width: 990px;
+      }
     }
   }
   &__fechar {
@@ -64,6 +73,7 @@
     max-width: 30px;
     background: none;
     border: 0;
+    z-index: 1;
     img {
       max-width: 100%;
     }

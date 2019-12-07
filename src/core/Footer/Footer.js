@@ -15,7 +15,7 @@ class Footer extends React.Component {
           <div className="container--max">
             <span className="footer__telefone">11 93022-9182</span>
             <p className="footer__endereco">Av. Dr. Timóteo Penteado, 1685 <br />
-            (em frente a Av. Suplicy) - Guarulhos / SP</p>
+            (em frente a Av. Suplicy) - Guarulhos / SP</p>
           </div>
           <div className="footer__sociais">
             <a target="_blank" href="https://www.instagram.com/crossfitmk1/">
@@ -24,9 +24,6 @@ class Footer extends React.Component {
             <a target="_blank" href="https://www.facebook.com/crossfitmk1/">
               <img src={ iconeFacebook } alt="Facebook"/>
             </a>
-            {/* <a target="_blank" href="https://www.youtube.com/channel/UClkUf1U2GGfIsIFVr9QjZ0w">
-              <img src={ iconeYoutube } alt="Youtube"/>
-            </a> */}
           </div>
         </footer>
       </div>

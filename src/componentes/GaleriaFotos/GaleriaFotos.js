@@ -3,8 +3,18 @@ import React from 'react';
 import "./GaleriaFotos.scss"
 
 import Fechar from '../../assets/imagens/icones/fechar.svg';
-import thumb1 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-thumb-1.jpg';
+import thumb1 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-1-thumb.jpg';
 import imagem1 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-1.jpg';
+import thumb2 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-2-thumb.jpg';
+import imagem2 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-2.jpg';
+import thumb3 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-3-thumb.jpg';
+import imagem3 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-3.jpg';
+import thumb4 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-4-thumb.jpg';
+import imagem4 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-4.jpg';
+import thumb5 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-5-thumb.jpg';
+import imagem5 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-5.jpg';
+import thumb6 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-6-thumb.jpg';
+import imagem6 from '../../assets/imagens/espaco/crossfit-guarulhos-mk1-6.jpg';
 
 class GaleriaFotos extends React.Component {
   state = { isOpen: false}
@@ -14,12 +24,24 @@ class GaleriaFotos extends React.Component {
       thumb: thumb1
     },
     {
-      imagem: imagem1,
-      thumb: thumb1
+      imagem: imagem2,
+      thumb: thumb2
     },
     {
-      imagem: imagem1,
-      thumb: thumb1
+      imagem: imagem3,
+      thumb: thumb3
+    },
+    {
+      imagem: imagem4,
+      thumb: thumb4
+    },
+    {
+      imagem: imagem5,
+      thumb: thumb5
+    },
+    {
+      imagem: imagem6,
+      thumb: thumb6
     }
   ]
   render() {
