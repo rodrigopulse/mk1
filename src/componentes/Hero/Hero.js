@@ -21,6 +21,7 @@ class Hero extends React.Component {
 		return (
 
 			<div className='hero'>
+        <div className="hero__overlay"></div>
         <div className="hero__imagem">
           { this.state.isMobile ? (
             <img src={ HeroMobile } alt="Hero Crossfit" />

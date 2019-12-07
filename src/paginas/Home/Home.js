@@ -12,8 +12,9 @@ import Footer from '../../core/Footer/Footer';
 import Hero from '../../componentes/Hero/Hero';
 import Pilares from '../../componentes/Pilares/Pilares';
 import Chamada from '../../componentes/Chamada/Chamada';
-import GaleriaFotos from '../../componentes/GaleriaFotos/GaleriaFotos'
-import Grade from '../../componentes/Grade/Grade'
+import GaleriaFotos from '../../componentes/GaleriaFotos/GaleriaFotos';
+import Grade from '../../componentes/Grade/Grade';
+import Coach from '../../componentes/Coach/Coach';
 
 class Home extends React.Component {
 
@@ -33,6 +34,7 @@ class Home extends React.Component {
 				<Chamada />
 				<GaleriaFotos />
 				<Grade />
+				<Coach />
 				<Footer />
 			</div>
 
