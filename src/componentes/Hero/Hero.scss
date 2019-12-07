@@ -1,6 +1,9 @@
 .hero {
   width: 100%;
   height: auto;
+  max-height: 100vh;
+  overflow: hidden;
+  word-wrap: break-word;
   display: block;
   position: relative;
   &__imagem {
@@ -8,9 +11,12 @@
     height: auto;
     display: block;
     position: relative;
+    max-height: inherit;
+    max-width: inherit;
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
   &__conteudo {
