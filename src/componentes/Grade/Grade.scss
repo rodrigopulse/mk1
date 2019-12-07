@@ -1,0 +1,37 @@
+@import "../../assets/scss/variaveis.scss";
+
+.container-grade {
+  background: $corLaranja;
+  &__elementos {
+    display: flex;
+    padding: 60px 20px;
+    max-width: $tamanhoMaximo;
+  }
+  &__item {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      padding: 15px;
+    }
+  }
+  &__conteudo {
+    border: 8px solid #fff;
+    padding: 12px 6px;
+    h3 {
+      font-size: 27px;
+      text-align: center;
+      color: #fff;
+      @media screen and (min-width: 768px) {
+        font-size: 46px;
+      }
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      @media screen and (min-width: 768px) {
+        font-size: 23px;
+      }
+    }
+  }
+}

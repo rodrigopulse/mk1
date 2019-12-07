@@ -13,6 +13,7 @@ import Hero from '../../componentes/Hero/Hero';
 import Pilares from '../../componentes/Pilares/Pilares';
 import Chamada from '../../componentes/Chamada/Chamada';
 import GaleriaFotos from '../../componentes/GaleriaFotos/GaleriaFotos'
+import Grade from '../../componentes/Grade/Grade'
 
 class Home extends React.Component {
 
@@ -31,6 +32,7 @@ class Home extends React.Component {
 				<Pilares />
 				<Chamada />
 				<GaleriaFotos />
+				<Grade />
 				<Footer />
 			</div>
 

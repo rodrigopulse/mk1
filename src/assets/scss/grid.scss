@@ -1,3 +1,5 @@
+@import './variaveis.scss';
+
 .wrapper {
   width: 100%;
   height: auto;
@@ -15,6 +17,6 @@
 }
 .container--max {
   margin: 0 auto;
-  max-width: 1160px;
+  max-width: $tamanhoMaximo;
   padding: 0 20px;
 }
