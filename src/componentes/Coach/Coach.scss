@@ -9,13 +9,16 @@
   &__imagem {
     width: 100%;
     height: auto;
-    max-height: 100vh;
+    max-height: 90vh;
     overflow: hidden;
     word-wrap: break-word;
     display: block;
     position: relative;
     img {
       width: inherit;
+    }
+    @media screen and (min-width: 768px) {
+      max-height: 70vh;
     }
   }
   &__overlay {
@@ -34,11 +37,25 @@
     background: linear-gradient(to bottom, rgba(5,5,5,0.28) 0%, rgba(0,0,0,0.51) 57%, rgba(0,0,0,0.53) 63%, rgba(3,3,3,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050505', endColorstr='#030303', GradientType=0 );
   }
+  &__nome {
+    font-size: 33px;
+  }
   &__conteudo {
     position: relative;
     padding-bottom: 25px;
     p {
       color: #fff;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+        color: #fff;
+        list-style: none;
+      }
     }
   }
 }
