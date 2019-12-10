@@ -1,4 +1,12 @@
-h1, h2, h3, h4, h5 {
+p, li {
+  font-size: 18px;
+  line-height: 20px;
+  @media screen and (min-width) {
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+h1, h2, h3 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   color: $corLaranja;
