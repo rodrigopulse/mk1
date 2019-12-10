@@ -7,7 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 @import './assets/scss/grid.scss';
 @import './assets/scss/botoes';
 @import './assets/scss/textos';
