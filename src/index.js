@@ -5,12 +5,13 @@ import {
   Route
 } from 'react-router-dom';
 
-//Páginas
-import Home from "./paginas/Home/Home";
-import AulaExperimental from "./paginas/AulaExperimental/AulaExperimental";
 //Sass
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
+
+//Páginas
+import Home from "./paginas/Home/Home";
+import AulaExperimental from "./paginas/AulaExperimental/AulaExperimental";
 
 import * as serviceWorker from './serviceWorker';
 

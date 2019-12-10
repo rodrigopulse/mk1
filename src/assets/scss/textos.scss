@@ -6,6 +6,11 @@ p, li {
     line-height: 35px;
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  margin-top: 0;
+}
 h1, h2, h3 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
