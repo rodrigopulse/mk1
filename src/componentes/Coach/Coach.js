@@ -5,6 +5,17 @@ import './Coach.scss';
 import CoachDesktop from '../../assets/imagens/heros/head-coach-marcel-ligotti.jpg';
 
 class Coach extends React.Component {
+  constructor(){
+    super()
+  }
+  state = {
+    leiaMais: false
+  }
+  abreLeiaMais = () => {
+    this.setState({
+      leiaMais: !this.state.leiaMais
+    });
+  }
   render() {
     return (
       <div className="coach">
@@ -13,7 +24,7 @@ class Coach extends React.Component {
           <img src={CoachDesktop} alt="Head Coach Marcel Ligotti" />
         </div>
         <div className="container container--max">
-          <div className="coach__conteudo">
+          <div className={this.state.leiaMais ? "coach__conteudo coach__conteudo--open" : "coach__conteudo"}>
             <h3 className="txt-h1">Nosso head coach</h3>
             <h4 className="coach__nome">Marcel Ligotti</h4>
             <p>Graduado em Educação Física e Pós-graduado em Condicionamento Físico e Administração e Marketing Esportivo, possui mais de 24 anos de experiência na área de treinamento desportivo e saúde.</p>
@@ -31,6 +42,9 @@ class Coach extends React.Component {
               <li>• Curso MAD Powerlifting</li>
               <li>• F.Reis Weightlifting Level 1</li>
             </ul>
+          </div>
+          <div className="container container-botao-mais">
+            <button className="btn-primary" onClick={this.abreLeiaMais}>Leia Mais</button>
           </div>
         </div>
       </div>

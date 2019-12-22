@@ -47,6 +47,10 @@
   &__conteudo {
     position: relative;
     padding-bottom: 25px;
+    height: 250px;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+    margin-bottom: 30px;
     p {
       color: #fff;
     }
@@ -60,5 +64,12 @@
         list-style: none;
       }
     }
+    &--open {
+      transition: all 2s ease-in-out;
+      height: auto;
+    }
   }
+}
+.container-botao-mais {
+  padding-bottom: 30px;
 }
