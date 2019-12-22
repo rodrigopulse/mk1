@@ -1,0 +1,20 @@
+@import "../../assets/scss/variaveis";
+.perguntas-frequentes {
+  width: 100%;
+  background: rgb(34, 34, 34);
+  padding-bottom: 50px;
+  &__titulo {
+    padding: 40px 20px;
+  }
+}
+.accordion .card {
+  background: #000;
+  cursor: pointer;
+  color: #fff;
+  font-size: 33px;
+  border-radius: 0;
+}
+.card-body {
+  background: #fff;
+  color: $corPreto;
+}
