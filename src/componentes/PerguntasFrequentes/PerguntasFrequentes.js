@@ -1,9 +1,10 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
-
+import Seta from '../../assets/imagens/icones/seta.svg';
 //sass
 import './PerguntasFrequentes.scss'
+
 class PerguntasFrequentes extends React.Component {
   render() {
     return(
@@ -15,7 +16,7 @@ class PerguntasFrequentes extends React.Component {
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="0">
-                Crossfit machuca?
+                <span>Crossfit machuca?</span> <img src={Seta} alt="Seta" />
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>Aqui vai o texto que abre</Card.Body>
@@ -23,7 +24,7 @@ class PerguntasFrequentes extends React.Component {
             </Card>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="1">
-                Tenho uma lesão, posso treinar mesmo assim?
+                <span>Tenho uma lesão, posso treinar mesmo assim?</span> <img src={Seta} alt="Seta" />
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="1">
                 <Card.Body>Aqui vai o texto que abre</Card.Body>

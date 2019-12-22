@@ -18,6 +18,19 @@
     font-size: 33px;
   }
 }
+.card {
+  cursor: pointer;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  span {
+    padding-right: 15px;
+  }
+  img {
+    transform: rotate(180deg);
+  }
+}
 .card-body {
   background: #fff;
   color: $corPreto;
