@@ -2,6 +2,9 @@
 
 a, button {
   cursor: pointer;
+  &:focus {
+    outline: none;
+  }
 }
 .btn-primary {
   background: $corLaranja;
@@ -10,10 +13,17 @@ a, button {
   border-radius: 16px;
   font-size: 16px;
   padding: .45rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
   &:hover {
     background: $corLaranja--hover;
   }
   &--sombra {
     box-shadow: 0px 3px 6px #333;
+  }
+  &:focus {
+    outline: none;
+    border-color: none;
+    background: $corLaranja--hover;
   }
 }

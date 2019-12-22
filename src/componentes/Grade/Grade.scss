@@ -1,5 +1,11 @@
 @import "../../assets/scss/variaveis.scss";
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container-grade {
   background: $corLaranja;
   &__elementos {
@@ -38,6 +44,7 @@
       color: #fff;
       @media screen and (min-width: 768px) {
         font-size: 23px;
+        line-height: 27px;
       }
     }
   }
