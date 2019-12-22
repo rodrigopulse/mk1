@@ -24,6 +24,7 @@ a, button {
   &:focus {
     outline: none;
     border-color: none;
-    background: $corLaranja--hover;
+    background: $corLaranja--hover !important;
+    box-shadow: none !important;
   }
 }
