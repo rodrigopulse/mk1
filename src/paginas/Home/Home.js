@@ -16,6 +16,7 @@ import GaleriaFotos from '../../componentes/GaleriaFotos/GaleriaFotos';
 import Grade from '../../componentes/Grade/Grade';
 import Coach from '../../componentes/Coach/Coach';
 import PerguntasFrequentes from '../../componentes/PerguntasFrequentes/PerguntasFrequentes';
+import Contato from '../../componentes/Contato/Contato';
 
 class Home extends React.Component {
 
@@ -37,6 +38,7 @@ class Home extends React.Component {
 				<Grade />
 				<Coach />
 				<PerguntasFrequentes />
+				<Contato />
 				<Footer />
 			</div>
 
