@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
-import emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet';
+import axios from 'axios';
 
 //bootstrap
 import Form from 'react-bootstrap/Form'
@@ -15,7 +15,9 @@ import Header from '../../core/Header/Header';
 import Footer from '../../core/Footer/Footer';
 
 class AulaExperimental extends React.Component {
-
+  constructor(props) {
+    super(props)
+  }
   state = {
     nome: '',
     email: '',
@@ -25,33 +27,28 @@ class AulaExperimental extends React.Component {
     showModal: false
   }
   handleSubmit(e) {
-		e.preventDefault()
-    const { nome, email, horario, telefone, mensagem } = this.state
-    let templateParams = {
-      email: email,
-      nome: nome,
-      horario: horario,
-			telefone: telefone,
-      mensagem: mensagem,
-     }
-     emailjs.send(
-      'gmail',
-      'aulaexperimental',
-      templateParams,
-      'user_cwQTG1vS8pQUEEexKWRGr'
-		 )
-		 this.resetForm();
-	}
-	resetForm() {
-    this.setState({
-      nome: '',
-      email: '',
-      horario: '',
-      telefone: '',
-      mensagem: '',
-      showModal: true
+    e.preventDefault()
+    const { nome, telefone, email, horario, mensagem } = this.state
+    const data = new FormData ()
+    data.append ('nome', nome)
+    data.append ('telefone', telefone)
+    data.append ('email', email)
+    data.append ('horario', horario)
+		data.append ('mensagem', mensagem)
+    axios.post('https://cors-anywhere.herokuapp.com/https://vagalumeria.com.br/sendmail/mk1-experimental.php', data)
+    .then( (response) => {
+			this.setState({
+				nome: '',
+				telefone: '',
+        email: '',
+        horario: '',
+				mensagem: '',
+				showModal: true
+			});
     })
-
+    .catch( (response) => {
+      console.log(response);
+    });
   }
 	handleChange = (param, e) => {
     this.setState({ [param]: e.target.value })
