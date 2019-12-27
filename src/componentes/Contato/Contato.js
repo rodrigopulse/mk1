@@ -1,5 +1,5 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import axios from 'axios';
 
 //bootstrap
 import Form from 'react-bootstrap/Form'
@@ -11,42 +11,37 @@ import MaskedFormControl from 'react-bootstrap-maskedinput'
 import './Contato.scss';
 
 class Contato extends React.Component {
+  constructor(props) {
+    super(props)
+  }
   state = {
     nome: '',
     email: '',
-    horario: '',
     telefone: '',
     mensagem: '',
     showModal: false
   }
   handleSubmit(e) {
-		e.preventDefault()
-    const { nome, email, horario, telefone, mensagem } = this.state
-    let templateParams = {
-      email: email,
-      nome: nome,
-      horario: horario,
-			telefone: telefone,
-      mensagem: mensagem,
-     }
-     emailjs.send(
-      'gmail',
-      'aulaexperimental',
-      templateParams,
-      'user_cwQTG1vS8pQUEEexKWRGr'
-		 )
-		 this.resetForm();
-	}
-	resetForm() {
-    this.setState({
-      nome: '',
-      email: '',
-      horario: '',
-      telefone: '',
-      mensagem: '',
-      showModal: true
+    e.preventDefault()
+    const { nome, telefone, email, mensagem } = this.state
+    const data = new FormData ()
+    data.append ('nome', nome)
+    data.append ('telefone', telefone)
+    data.append ('email', email)
+		data.append ('mensagem', mensagem)
+    axios.post('https://cors-anywhere.herokuapp.com/https://vagalumeria.com.br/sendmail/mk1-contato.php', data)
+    .then( (response) => {
+			this.setState({
+				nome: '',
+				telefone: '',
+        email: '',
+				mensagem: '',
+				showModal: true
+			});
     })
-
+    .catch( (response) => {
+      console.log(response);
+    });
   }
 	handleChange = (param, e) => {
     this.setState({ [param]: e.target.value })
@@ -59,6 +54,15 @@ class Contato extends React.Component {
   render() {
     return(
       <div className="container contato">
+        { this.state.showModal &&
+          <div className="modal-aula">
+            <div className="modal-aula__conteudo">
+              <h4>Mensagem enviada com sucesso :)</h4>
+              <p>Em breve entraremos em contato com você</p>
+              <button className="btn btn-primary" onClick={this.closeModalHandler}>Ok</button>
+            </div>
+          </div>
+        }
         <div className='container container--max'>
           <h3 className="txt-h1">Contato</h3>
           <p className="contato__descricao">Escreva sua mensagem abaixo que entraremos em contato em breve!</p>

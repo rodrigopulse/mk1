@@ -22,6 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://vagalumeria.com.br/clientes/mk1/",
   "eslintConfig": {
     "extends": "react-app"
   },
