@@ -45,7 +45,12 @@ class Coach extends React.Component {
             </ul>
           </div>
           <div className="container container-botao-mais">
-            <button className="btn-primary" onClick={this.abreLeiaMais}>Leia Mais <img src={Seta} alt="Seta" /></button>
+            <button
+              className="btn-primary" onClick={this.abreLeiaMais}
+            >
+              Leia Mais
+              <img className={this.state.leiaMais ? "container-botao-mais__icone container-botao-mais__icone--open" : "container-botao-mais__icone"} src={Seta} alt="Seta" />
+            </button>
           </div>
         </div>
       </div>
