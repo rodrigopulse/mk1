@@ -3,6 +3,7 @@ import './Coach.scss';
 
 // Imagens
 import CoachDesktop from '../../assets/imagens/heros/head-coach-marcel-ligotti.jpg';
+import Seta from '../../assets/imagens/icones/seta.svg';
 
 class Coach extends React.Component {
   constructor(){
@@ -44,7 +45,7 @@ class Coach extends React.Component {
             </ul>
           </div>
           <div className="container container-botao-mais">
-            <button className="btn-primary" onClick={this.abreLeiaMais}>Leia Mais</button>
+            <button className="btn-primary" onClick={this.abreLeiaMais}>Leia Mais <img src={Seta} alt="Seta" /></button>
           </div>
         </div>
       </div>
