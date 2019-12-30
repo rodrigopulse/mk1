@@ -33,7 +33,8 @@ class Coach extends React.Component {
             <ul>
               <li>• Comentarista da ESPN – Crossfit Games 2014, 2015 e 2016</li>
               <li>• Comentarista CrossFit BCC – CrossFit games 2019</li>
-              <li>• Comentarista CrossTV • CrossFit Level 1</li>
+              <li>• Comentarista CrossTV</li>
+              <li>• CrossFit Level 1</li>
               <li>• CrossFit Level 2</li>
               <li>• Crossfit Weightlifting Trainer Course</li>
               <li>• Capacitação Crossfit Brasil Nível I e II</li>
