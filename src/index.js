@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  ReactRouter
 } from 'react-router-dom';
 import TagManager from 'react-gtm-module';
 
@@ -25,7 +24,7 @@ TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
   <div className="wrapper">
-    <Router history={ReactRouter.hashHistory}>
+    <Router>
       <Route exact path={`${process.env.PUBLIC_URL}/`}  component={ Home } />
       <Route exact path={`${process.env.PUBLIC_URL}/aula-de-crossfit`}  component={ AulaExperimental } />
     </Router>
