@@ -33,10 +33,10 @@ $htmlAula = '
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
 //Set who the message is to be sent from
-$mail->setFrom('contato@vagalumeria.com.br', 'Vagalumeria');
+$mail->setFrom('contato@crossfitmk1.com', 'Crossfit MK1');
 //Set an alternative reply-to address
-$mail->addReplyTo('contato@vagalumeria.com.br', 'Crossfit Mk1');
-$mail->addCC('contato@rodrigogodoy.net', 'Crossfit MK1');
+$mail->addReplyTo('contato@crossfitmk1.com', 'Crossfit Mk1');
+$mail->addCC('contato@crossfitmk1.com', 'Crossfit MK1');
 //Set who the message is to be sent to
 $mail->addAddress($email, 'Crossfit MK1');
 //Set the subject line

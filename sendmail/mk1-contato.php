@@ -14,11 +14,11 @@ $mensagem = $_POST['mensagem'];
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
 //Set who the message is to be sent from
-$mail->setFrom('contato@vagalumeria.com.br', 'Vagalumeria');
+$mail->setFrom('contato@crossfitmk1.com', 'Crossfit MK1');
 //Set an alternative reply-to address
-$mail->addReplyTo('contato@vagalumeria.com.br', 'Vagalumeria');
+$mail->addReplyTo('contato@crossfitmk1.com', 'Crossfit MK1');
 //Set who the message is to be sent to
-$mail->addAddress('contato@rodrigogodoy.net', 'Rodrigo Godoy');
+$mail->addAddress('contato@crossfitmk1.com', 'Crossfit MK1');
 //Set the subject line
 $mail->Subject = 'Contato do Site';
 //Read an HTML message body from an external file, convert referenced images to embedded,
