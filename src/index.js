@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+import TagManager from 'react-gtm-module';
 
 //Sass
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,6 +15,12 @@ import Home from "./paginas/Home/Home";
 import AulaExperimental from "./paginas/AulaExperimental/AulaExperimental";
 
 import * as serviceWorker from './serviceWorker';
+
+const tagManagerArgs = {
+  gtmId: 'GTM-TVSHSFW'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
   <div className="wrapper">
