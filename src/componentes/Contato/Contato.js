@@ -29,7 +29,7 @@ class Contato extends React.Component {
     data.append ('telefone', telefone)
     data.append ('email', email)
 		data.append ('mensagem', mensagem)
-    axios.post('https://cors-anywhere.herokuapp.com/https://crossfitmk1.com/sendmail/mk1-contato.php', data)
+    axios.post('https://crossfitmk1.com/sendmail/mk1-contato.php', data)
     .then( (response) => {
 			this.setState({
 				nome: '',

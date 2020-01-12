@@ -34,8 +34,9 @@ class AulaExperimental extends React.Component {
     data.append ('telefone', telefone)
     data.append ('email', email)
     data.append ('horario', horario)
-		data.append ('mensagem', mensagem)
-    axios.post('https://cors-anywhere.herokuapp.com/https://crossfitmk1.com/sendmail/mk1-experimental.php', data)
+    data.append ('mensagem', mensagem)
+    axios.post('https://crossfitmk1.com/sendmail/mk1-experimental.php', data)
+
     .then( (response) => {
 			this.setState({
 				nome: '',
