@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import MaskedFormControl from 'react-bootstrap-maskedinput'
-
+import Carregando from '../Carregando/Carregando';
 //sass
 import './Contato.scss';
 
@@ -19,11 +19,13 @@ class Contato extends React.Component {
     email: '',
     telefone: '',
     mensagem: '',
+    carregando: false,
     showModal: false
   }
   handleSubmit(e) {
     e.preventDefault()
     const { nome, telefone, email, mensagem } = this.state
+    this.setState({carregando: true});
     const data = new FormData ()
     data.append ('nome', nome)
     data.append ('telefone', telefone)
@@ -35,11 +37,13 @@ class Contato extends React.Component {
 				nome: '',
 				telefone: '',
         email: '',
-				mensagem: '',
+        mensagem: '',
+        carregando: false,
 				showModal: true
 			});
     })
     .catch( (response) => {
+      this.setState({carregando: false});
       console.log(response);
     });
   }
@@ -54,6 +58,7 @@ class Contato extends React.Component {
   render() {
     return(
       <div className="container contato">
+        { this.state.carregando ? <Carregando /> : null }
         { this.state.showModal &&
           <div className="modal-aula">
             <div className="modal-aula__conteudo">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import axios from 'axios';
+import Carregando from '../../componentes/Carregando/Carregando.js';
 
 //bootstrap
 import Form from 'react-bootstrap/Form'
@@ -24,12 +25,14 @@ class AulaExperimental extends React.Component {
     horario: '',
     telefone: '',
     mensagem: '',
-    showModal: false
+    showModal: false,
+    carregando: false
   }
   handleSubmit(e) {
     e.preventDefault()
     const { nome, telefone, email, horario, mensagem } = this.state
     const data = new FormData ()
+    this.setState({carregando: true})
     data.append ('nome', nome)
     data.append ('telefone', telefone)
     data.append ('email', email)
@@ -43,11 +46,13 @@ class AulaExperimental extends React.Component {
 				telefone: '',
         email: '',
         horario: '',
-				mensagem: '',
+        mensagem: '',
+        carregando: false,
 				showModal: true
 			});
     })
     .catch( (response) => {
+      this.setState({carregando: false})
       console.log(response);
     });
   }
@@ -62,7 +67,7 @@ class AulaExperimental extends React.Component {
   render() {
     return (
       <div className='container container-aula-experimental'>
-
+        {this.state.carregando ? <Carregando /> : null}
         <Helmet>
           <meta charSet="utf-8" />
           <title>Aula Experimental de Crossfit em Guarulhos - MK1</title>
