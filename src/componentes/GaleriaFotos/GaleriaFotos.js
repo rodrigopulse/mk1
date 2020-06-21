@@ -45,7 +45,6 @@ class GaleriaFotos extends React.Component {
     }
   ]
   render() {
-    console.log(this.imagens);
     const { isOpen } = this.state;
     return(
       <div className="container galeria-fotos">
@@ -70,8 +69,8 @@ class GaleriaFotos extends React.Component {
         )}
 
         <div className="galeria-fotos">
-          {this.imagens.map((imagem)=> (
-            <div className="galeria-fotos__thumb">
+          {this.imagens.map((imagem, index)=> (
+            <div key = { index } className="galeria-fotos__thumb">
               <button className="galeria-fotos__botao"
               onClick={
                 () => this.setState({
