@@ -7,7 +7,6 @@ import Carregando from '../../componentes/Carregando/Carregando.js';
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import MaskedFormControl from 'react-bootstrap-maskedinput'
 //sass
 import './AulaExperimental.scss';
 
@@ -120,8 +119,7 @@ class AulaExperimental extends React.Component {
               </Form.Row>
               <Form.Row>
                 <Form.Group as={Col} md="6">
-                  <MaskedFormControl
-                    mask='(11) 1111-11111'
+                  <Form.Control
                     className="form-control-lg"
                     name="telefone"
                     value={this.state.telefone}

@@ -4,10 +4,10 @@
   position: relative;
   display: block;
   margin: 0;
-  background: $corLaranja;
+  background: #dfdfdf;
   padding: 60px 0;
   h3, h4 {
-    color: #fff;
+    color: #222222;
   }
   h3 {
     font-size: 27px;
@@ -20,7 +20,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     @media screen and ( min-width: 768px ) {
-      font-size: 33px;      
+      font-size: 33px;
     }
   }
 }

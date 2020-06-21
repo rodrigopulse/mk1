@@ -7,7 +7,7 @@
 }
 
 .container-grade {
-  background: $corLaranja;
+  background: #dfdfdf;
   &__elementos {
     display: flex;
     padding: 60px 20px;
@@ -28,13 +28,13 @@
     }
   }
   &__conteudo {
-    border: 8px solid #fff;
+    border: 8px solid #222222;
     padding: 12px 6px;
     height: 100%;
     h3 {
       font-size: 27px;
       text-align: center;
-      color: #fff;
+      color: #222222;
       @media screen and (min-width: 768px) {
         font-size: 46px;
       }
@@ -42,7 +42,7 @@
     p {
       font-size: 18px;
       text-align: center;
-      color: #fff;
+      color: #222222;
       @media screen and (min-width: 768px) {
         font-size: 23px;
         line-height: 27px;

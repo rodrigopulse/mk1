@@ -5,7 +5,6 @@ import axios from 'axios';
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import MaskedFormControl from 'react-bootstrap-maskedinput'
 import Carregando from '../Carregando/Carregando';
 //sass
 import './Contato.scss';
@@ -100,8 +99,7 @@ class Contato extends React.Component {
                 />
               </Form.Group>
               <Form.Group as={Col} md="6">
-                <MaskedFormControl
-                  mask='(11) 1111-11111'
+                <Form.Control
                   className="form-control-lg"
                   name="telefone"
                   value={this.state.telefone}
