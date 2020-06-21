@@ -9,8 +9,8 @@ class Grade extends React.Component {
           <div className="container-grade__item">
             <div className="container-grade__conteudo">
               <h3>Endereço</h3>
-              <p>Av. Timóteo Penteado, 1685<br />
-              (em frente a Av. Suplicy)<br />
+              <p>Av Emílio Ribas, nº 3243<br />
+              (esquina com a Rua José Bonifácio)<br />
               Guarulhos - SP</p>
             </div>
           </div>

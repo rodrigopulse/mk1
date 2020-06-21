@@ -14,8 +14,8 @@ class Footer extends React.Component {
         <footer className="footer">
           <div className="container--max">
             <span className="footer__telefone">11 93022-9182</span>
-            <p className="footer__endereco">Av. Dr. Timóteo Penteado, 1685 <br />
-            (em frente a Av. Suplicy) - Guarulhos / SP</p>
+            <p className="footer__endereco">Av Emílio Ribas, nº 3243 <br />
+            (esquina com a Rua José Bonifácio) - Guarulhos / SP</p>
           </div>
           <div className="footer__sociais">
             <a target="_blank" href="https://www.instagram.com/crossfitmk1/">
