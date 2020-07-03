@@ -17,8 +17,7 @@ class Grade extends React.Component {
           <div className="container-grade__item">
             <div className="container-grade__conteudo">
               <h3>Grade de Horários</h3>
-              <p>Segunda a Sexta - 6h, 7h, 8h, 9h, 12h, 16h, 17h, 18h, 19h, 20h, e 21h.<br />
-              Sábado - 10h</p>
+              <p>Consulte-nos</p>
             </div>
           </div>
         </div>
