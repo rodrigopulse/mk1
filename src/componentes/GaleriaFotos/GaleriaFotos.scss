@@ -26,7 +26,7 @@
     border: 0;
     img {
       width: 100%;
-      transition: all .4s linear;
+      transition: all 0.4s linear;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       &:hover {
@@ -47,7 +47,8 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
   &__imagem {
     height: 90%;
     width: auto;
@@ -65,6 +66,11 @@
         max-width: 990px;
       }
     }
+  }
+  &__titulo {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
   }
   &__fechar {
     position: absolute;
