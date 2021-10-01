@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://crossfitmk1.com",
+  "homepage": "https://crossfitmk1.com.br",
   "eslintConfig": {
     "extends": "react-app"
   },

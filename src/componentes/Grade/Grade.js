@@ -8,7 +8,7 @@ class Grade extends React.Component {
         <div className="container-grade__elementos">
           <div className="container-grade__item">
             <div className="container-grade__conteudo">
-              <h3>Unidade 1</h3>
+              <h3>Unidade Vila Galvão</h3>
               <p>
                 Av Emílio Ribas, 3243
                 <br />
@@ -22,7 +22,7 @@ class Grade extends React.Component {
           </div>
           <div className="container-grade__item">
             <div className="container-grade__conteudo">
-              <h3>Unidade 2</h3>
+              <h3>Unidade Vila Algusta</h3>
               <p>
                 Rua Santa Izabel, 756
                 <br />
